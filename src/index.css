@@ -1,0 +1,103 @@
+
+@import "tailwindcss";
+
+/* Editor workspace */
+
+.resume-workspace {
+  min-height: calc(100vh - 70px);
+  background: #e5e7eb;
+  padding: 35px 15px;
+  overflow-x: auto;
+}
+
+/* A4 paper */
+
+.resume-paper {
+  width: 210mm;
+  min-height: 297mm;
+  height: auto;
+  padding: 18mm 17mm;
+  margin: 0 auto 25px;
+  background: white;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  overflow: visible;
+}
+
+.resume-content {
+  min-height: 0;
+  height: auto;
+  overflow: visible;
+  outline: none;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.6;
+  overflow-wrap: break-word;
+}
+
+/* Resume headings */
+
+.resume-content h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e3a5f;
+  margin-bottom: 5px;
+}
+
+.resume-content h2 {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+  margin-top: 22px;
+  margin-bottom: 10px;
+}
+
+.resume-content h3 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.resume-content p {
+  margin: 5px 0;
+}
+
+.resume-content ul,
+.resume-content ol {
+  padding-left: 25px;
+  margin: 8px 0;
+}
+
+.resume-content ul {
+  list-style-type: disc;
+}
+
+.resume-content ol {
+  list-style-type: decimal;
+}
+
+.resume-content li {
+  margin-bottom: 4px;
+}
+
+/* Selection */
+
+.resume-content ::selection {
+  background: #bfdbfe;
+}
+
+/* Print / PDF */
+
+@media print {
+  .resume-workspace {
+    padding: 0;
+    background: white;
+  }
+
+  .resume-paper {
+    margin: 0;
+    box-shadow: none;
+  }
+}
